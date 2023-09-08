@@ -4,10 +4,9 @@ import application.bookshop.exception.EntityNotFoundException;
 import application.bookshop.model.Book;
 import application.bookshop.repository.SpecificationProvider;
 import application.bookshop.repository.SpecificationProviderManager;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 @RequiredArgsConstructor
 @Component
@@ -19,6 +18,7 @@ public class BookSpecificationProviderManager implements SpecificationProviderMa
         return bookSpecificationProviders.stream()
                 .filter(b -> b.getKey().equals(key))
                 .findFirst()
-                .orElseThrow(() -> new EntityNotFoundException("Can't find correct specification provider for key" + key));
+                .orElseThrow(() -> new EntityNotFoundException(
+                        "Can't find correct specification provider for key" + key));
     }
 }

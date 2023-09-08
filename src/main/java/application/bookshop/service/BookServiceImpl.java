@@ -7,9 +7,8 @@ import application.bookshop.exception.EntityNotFoundException;
 import application.bookshop.mapper.BookMapper;
 import application.bookshop.model.Book;
 import application.bookshop.repository.book.BookRepository;
-import java.util.List;
-
 import application.bookshop.repository.book.BookSpecificationBuilder;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
