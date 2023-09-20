@@ -1,4 +1,4 @@
-package application.bookshop.dto;
+package application.bookshop.dto.bookdto;
 
 import lombok.Data;
 

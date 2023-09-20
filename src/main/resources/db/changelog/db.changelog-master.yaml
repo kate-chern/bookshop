@@ -7,3 +7,9 @@ databaseChangeLog:
       file: db/changelog/changes/03-renameColumn-isDeleted-column-to-books-table.yaml
   - include:
       file: db/changelog/changes/04-create-new-books-table.yaml
+  - include:
+      file: db/changelog/changes/05-create-users-table.yaml
+  - include:
+      file: db/changelog/changes/06-create-roles-table.yaml
+  - include:
+      file: db/changelog/changes/07-create-user-role-table.yaml
